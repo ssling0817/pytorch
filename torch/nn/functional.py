@@ -3571,11 +3571,11 @@ def multi_margin_loss(
     input: Tensor,
     target: Tensor,
     p: int = 1,
-    margin: float = 2.0,
+    margin: float = 1.0,
     weight: Optional[Tensor] = None,
     size_average: Optional[bool] = None,
     reduce: Optional[bool] = None,
-    reduction: str = "sum",
+    reduction: str = "mean",
 ) -> Tensor:  # noqa: D400,D402
     r"""multi_margin_loss(input, target, p=1, margin=1, weight=None, size_average=None, reduce=None, reduction='mean') -> Tensor
 
